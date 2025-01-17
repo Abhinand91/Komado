@@ -3,58 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOMADO - Your Fashion Destination</title>
+    <title>KOMADO - Minimalistic Fashion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="images/logo.png" alt="KOMADO Logo">
+            <h1>KOMADO</h1>
         </div>
-        <nav>
-            <ul>
+        <nav class="nav">
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#new">New Arrivals</a></li>
+                <li><a href="#collection">Collection</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+            <a href="#cart" class="cart-icon">🛒</a>
+        </div>
     </header>
 
-    <section id="home">
-        <h1>Welcome to KOMADO</h1>
-        <p>Where Tradition Meets Trend</p>
-        <a href="#products" class="btn">Shop Now</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Effortless Elegance</h1>
+            <p>Discover timeless styles crafted for the modern you.</p>
+            <a href="#new" class="btn">Shop New Arrivals</a>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>KOMADO is your one-stop destination for clothing tailored to Indian body types. We blend tradition with trend to craft timeless styles.</p>
-    </section>
-
-    <section id="products">
-        <h2>Our Products</h2>
+    <section id="new" class="new-arrivals">
+        <h2>New Arrivals</h2>
         <div class="product-grid">
             <div class="product">
                 <img src="images/product1.jpg" alt="Product 1">
-                <h3>Stylish Kurta</h3>
-                <p>₹999</p>
+                <h3>Flowy Shirt</h3>
+                <p>₹1,299</p>
             </div>
             <div class="product">
                 <img src="images/product2.jpg" alt="Product 2">
-                <h3>Modern Saree</h3>
-                <p>₹1999</p>
+                <h3>Casual Trousers</h3>
+                <p>₹1,799</p>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>Oversized Jacket</h3>
+                <p>₹2,499</p>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@komado.com</p>
+    <section id="collection" class="collection">
+        <h2>Our Collection</h2>
+        <p>Explore our curated selection of outfits designed to make a statement.</p>
+        <div class="collection-grid">
+            <div class="collection-item">
+                <img src="images/collection1.jpg" alt="Collection 1">
+                <h3>Summer Essentials</h3>
+            </div>
+            <div class="collection-item">
+                <img src="images/collection2.jpg" alt="Collection 2">
+                <h3>Evening Elegance</h3>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 KOMADO. All Rights Reserved.</p>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 KOMADO. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
