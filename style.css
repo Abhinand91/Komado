@@ -1,22 +1,26 @@
-/* Basic Styling */
-body {
-    font-family: 'Arial', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
 header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
 
-header .logo img {
-    height: 50px;
+.logo img {
+    width: 150px;
 }
 
 nav ul {
@@ -26,107 +30,161 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff7f50;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
 }
 
-/* Section Styling */
-section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f5f5f5;
-}
-
+/* Home Section */
 #home {
-    background: url('images/hero-bg.jpg') center/cover no-repeat;
-    color: Green;
+    background: url('images/home-bg.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
 }
 
-h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-p {
-    font-size: 1.5em;
+#home h1 {
+    font-size: 4rem;
     margin-bottom: 20px;
+    z-index: 2;
 }
 
-.btn {
-    padding: 10px 20px;
-    background-color: #ff7f50;
-    color: white;
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+#home .btn {
     text-decoration: none;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #333;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
+    z-index: 2;
 }
 
-.btn:hover {
-    background-color: #ff4500;
+#home .btn:hover {
+    background-color: #555;
 }
 
-/* Product Grid */
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Product Section */
+#products {
+    padding: 50px 20px;
+}
+
+#products h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
 .product img {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
 }
 
-.product img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+.product h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
 }
 
-/* Animations */
-html {
-    scroll-behavior: smooth;
+.product p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
 }
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+.product:hover {
+    transform: scale(1.05);
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
 }
 
-/* Text animation */
-h1, h2, p {
-    opacity: 0;
-    animation: fadeInUp 1s forwards;
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
 }
 
-h1, h2 {
-    animation-delay: 0.3s;
+#contact p {
+    font-size: 1.1rem;
+    color: #555;
 }
 
-p {
-    animation-delay: 0.6s;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+footer p {
+    font-size: 0.9rem;
 }
