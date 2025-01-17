@@ -1,233 +1,162 @@
-/* General Styling */
+/* Reset some basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and Font Setup */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
     color: #333;
-    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-/* Container for consistent padding */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header Styling */
+/* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 header .logo img {
     width: 150px;
-    height: auto;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
-    color: #ff5722; /* Hover color */
+    color: #ff9900;
 }
 
-/* Home Section */
-#home {
-    background-image: url('images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 20px;
 }
 
-#home h1 {
-    font-size: 3em;
+.hero .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-#home p {
-    font-size: 1.2em;
+.hero p {
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
-.btn {
-    background-color: #ff5722;
-    color: white;
-    padding: 12px 25px;
+.hero .btn {
+    padding: 10px 30px;
+    background-color: #ff9900;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
 }
 
-.btn:hover {
-    background-color: #e64a19; /* Darker hover color */
+.hero .btn:hover {
+    background-color: #e68a00;
 }
 
-/* About Section */
-#about {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #fff;
-}
-
-#about h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-
-/* Product Section */
+/* Product Showcase */
 #products {
-    padding: 60px 20px;
-    background-color: #fafafa;
+    padding: 50px 20px;
+    background-color: #fff;
     text-align: center;
-}
-
-#products h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-}
-
-.product {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.product:hover {
-    transform: translateY(-10px);
 }
 
 .product img {
     width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
+    border-radius: 10px;
 }
 
 .product h3 {
-    font-size: 1.6em;
-    margin: 15px 0;
+    margin-top: 10px;
+    font-size: 1.2rem;
 }
 
 .product p {
-    font-size: 1.2em;
-    color: #ff5722;
+    font-size: 1.1rem;
+    color: #ff9900;
 }
 
-.product button {
-    background-color: #ff5722;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+.product .btn {
+    padding: 8px 20px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.product button:hover {
-    background-color: #e64a19;
+.product .btn:hover {
+    background-color: #555;
 }
 
-/* Contact Section */
-#contact {
-    padding: 40px 20px;
-    background-color: #fff;
+/* Testimonials */
+#testimonials {
+    background: #f8f8f8;
+    padding: 50px 20px;
     text-align: center;
 }
 
-#contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.testimonial {
+    margin: 20px 0;
+    font-style: italic;
 }
 
-#contact p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-form {
-    margin-top: 30px;
-    text-align: left;
-    display: inline-block;
-    width: 100%;
-    max-width: 600px;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #ff5722;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #e64a19;
+.testimonial h4 {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-links a:hover {
+    color: #ff9900;
 }
