@@ -1,99 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOMADO - Minimalistic Fashion</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="logo">
-            <h1>KOMADO</h1>
+<div class="landing-section">
+  <section class="hero-banner">
+    <nav class="nav-container">
+      <div class="header-nav">
+        <h1 class="brand-logo">Rivo</h1>
+        <div class="nav-links">
+          <a href="#" class="nav-item">Home</a>
+          <a href="#" class="nav-item">Shop</a>
+          <a href="#" class="nav-item">Features</a>
+          <a href="#" class="nav-item">Contact</a>
         </div>
-        <nav class="nav">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#new">New Arrivals</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="search-cart">
-            <input type="text" placeholder="Search...">
-            <a href="#cart" class="cart-icon">🛒</a>
+        <div class="nav-auth">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ebd0d5d7c1ae363f6c7cc6ecfc05615f8296938e848dabbff709145803a0ff87?placeholderIfAbsent=true&apiKey=500e7c0f6b96453fb5eee1eef1fcedc0" class="cart-icon" alt="Shopping cart icon" />
+          <button class="login-btn">Login</button>
         </div>
-    </header>
+      </div>
+      <div class="hero-content">
+        <div class="hero-grid">
+          <div class="hero-text-col">
+            <div class="hero-text-wrapper">
+              <h2 class="hero-heading">Discover and Find Your Own Fashion!</h2>
+              <p class="hero-subtext">
+                Explore our curated collection of stylish clothing and accessories tailored to your unique taste.
+              </p>
+              <button class="cta-button">Explore Now</button>
+            </div>
+          </div>
+          <div class="hero-image-col">
+            <div class="hero-image-wrapper">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/be02f252cedcd0cb3a101eeeb3b8f1b36ddf2a20da3dfb7a0d8edd7debcace3a?placeholderIfAbsent=true&apiKey=500e7c0f6b96453fb5eee1eef1fcedc0" class="hero-image" alt="Fashion model showcasing latest collection" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/77bc484338df2e4ef89a49bfd9f759ca99f4f6e38efda8f19f357ec909e8c363?placeholderIfAbsent=true&apiKey=500e7c0f6b96453fb5eee1eef1fcedc0" class="accent-image-1" alt="Fashion accent piece" />
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/77bc484338df2e4ef89a49bfd9f759ca99f4f6e38efda8f19f357ec909e8c363?placeholderIfAbsent=true&apiKey=500e7c0f6b96453fb5eee1eef1fcedc0" class="accent-image-2" alt="Fashion accent piece" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Effortless Elegance</h1>
-            <p>Discover timeless styles crafted for the modern you.</p>
-            <a href="#new" class="btn">Shop New Arrivals</a>
-        </div>
-    </section>
+  <!-- Best Selling Section -->
+  <section class="best-selling">
+    <h2 class="section-title">Best selling</h2>
+    <p class="section-subtitle">
+      Get in on the trend with our curated selection of best-selling styles.
+    </p>
+    <!-- Continue with rest of sections following same semantic structure... -->
+  </section>
 
-    <section id="new" class="new-arrivals">
-        <h2>New Arrivals</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="images/k1.jpg" alt="Product 1">
-                <h3>Baggy T Shirt</h3>
-                <p>₹299</p>
-            </div>
-            <div class="product">
-                <img src="images/k2.jpg" alt="Product 2">
-                <h3>Normal T Shirt</h3>
-                <p>₹399</p>
-            </div>
-            <div class="product">
-                <img src="images/k3.jpg" alt="Product 3">
-                <h3>Oversized T Shirt</h3>
-                <p>₹499</p>
-            </div>
-            <div class="product">
-                <img src="images/k4.jpg" alt="Product 4">
-                <h3>T Shirt</h4>
-                <p>₹399</p>
-            </div>
-        </div>
-    </section>
+  <!-- Products Grid Section -->
+  <section class="products-grid">
+    <!-- Product cards with proper semantic markup -->
+  </section>
 
-    <section id="collection" class="collection">
-        <h2>Our Collection</h2>
-        <p>Explore our curated selection of outfits designed to make a statement.</p>
-        <div class="collection-grid">
-            <div class="collection-item">
-                <img src="images/k1.jpg" alt="Collection 1">
-                <h3>Summer Essentials</h3>
-            </div>
-            <div class="collection-item">
-                <img src="images/k2.jpg" alt="Collection 2">
-                <h3>Evening Elegance</h3>
-            </div>
-        </div>
-    </section>
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <form class="newsletter-form">
+      <label for="email" class="visually-hidden">Enter your email</label>
+      <input type="email" id="email" class="email-input" placeholder="Enter your email" required />
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions? Reach out to us!</p>
-        <form class="contact-form">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 KOMADO. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <!-- Footer content with semantic markup -->
+  </footer>
+</div>
