@@ -1,4 +1,4 @@
-/* Basic styling and layout */
+/* Basic Styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -65,4 +65,68 @@ p {
 
 .btn {
     padding: 10px 20px;
-    background-color: #ff7
+    background-color: #ff7f50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+html {
+    scroll-behavior: smooth;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Text animation */
+h1, h2, p {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+h1, h2 {
+    animation-delay: 0.3s;
+}
+
+p {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
