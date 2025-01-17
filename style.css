@@ -1,116 +1,186 @@
-/* Basic styles for KOMADO website */
-
-/* Reset some default styles */
-body, h1, h2, p, ul {
+/* General Styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body background and font */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Header styles */
+/* Header Styling */
 header {
     background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 header .logo img {
-    width: 120px;
+    width: 150px;
+    height: auto;
 }
 
-/* Navigation styles */
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ff5722; /* Hover color */
 }
 
-/* Home section styles */
+/* Home Section */
 #home {
-    background-color: #222;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
 
-#home .btn {
-    padding: 10px 20px;
-    background-color: #ff6347;
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ff5722;
     color: white;
+    padding: 12px 25px;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
-#home .btn:hover {
-    background-color: #e5533e;
+.btn:hover {
+    background-color: #e64a19; /* Darker hover color */
 }
 
-/* About section styles */
+/* About Section */
 #about {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
+    background-color: #fff;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 #about p {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Product grid styles */
+/* Product Section */
+#products {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
 .product-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .product {
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
 }
 
 .product img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .product h3 {
-    margin: 10px 0;
+    font-size: 1.6em;
+    margin: 15px 0;
 }
 
 .product p {
-    color: #ff6347;
-    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff5722;
 }
 
-/* Footer styles */
+.product button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #e64a19;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
 footer {
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
 }
