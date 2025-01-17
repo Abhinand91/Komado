@@ -1,99 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/png" />
-  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <title>Fashion Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOMADO - Minimalistic Fashion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header sticky-header">
-    <nav class="navbar">
-      <div class="container d-flex">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="Logo" />
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="KOMADO Logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#new">New Arrivals</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-cart">
+                <input type="text" placeholder="Search...">
+                <a href="#cart" class="cart-icon">🛒</a>
+            </div>
         </div>
-        <div class="nav-list d-flex">
-          <a href="#">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">Pages</a>
-          <a href="#">About Us</a>
-          <a href="#">Lookups</a>
-          <a class="user-link" href="#">Login</a>
-        </div>
-        <div class="hamburger">
-          <i class="bx bx-menu-alt-right"></i>
-        </div>
-      </div>
-    </nav>
-    <div class="hero">
-      <div class="container d-flex">
-        <div class="col">
-          <span class="subtitle">Limited Time Only For Winter</span>
-          <h1>Fash<span class="i">i</span>on</h1>
-          <p>LOOK YOUR BEST ON YOUR BEST DAY</p>
-          <button class="btn explore-btn">Explore Now!</button>
-        </div>
-        <img src="./images/woman-in-cart.png" alt="Fashion" class="hero-image" />
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="collection section">
-    <div class="title">
-      <span>COLLECTION</span>
-      <h2>Our Top Collection</h2>
-    </div>
-    <div class="filters d-flex">
-      <div data-filter="Jewellery">Jewellery</div>
-      <div data-filter="Accessories">Accessories</div>
-      <div data-filter="Dresses">Dresses</div>
-      <div data-filter="Footwear">Footwear</div>
-    </div>
-    <div class="products container">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Add product items here -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Effortless Elegance</h1>
+            <p>Discover timeless styles crafted for the modern you.</p>
+            <a href="#new" class="btn">Shop New Arrivals</a>
         </div>
-      </div>
-      <div class="pagination">
-        <div class="custom-pagination"></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container d-flex">
-      <div class="col">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="Logo" />
+    <section id="new" class="new-arrivals">
+        <div class="container">
+            <h2>New Arrivals</h2>
+            <div class="product-grid">
+                <!-- Product items -->
+            </div>
         </div>
-        <p>Lorem ispum placeholder text commonly used for free text.</p>
-        <div class="social-icons d-flex">
-          <i class="bx bxl-facebook"></i>
-          <i class="bx bxl-twitter"></i>
-          <i class="bx bxl-instagram"></i>
-          <i class="bx bxl-youtube"></i>
-        </div>
-      </div>
-      <div class="col">
-        <h4>Product</h4>
-        <a href="#">Download</a>
-        <a href="#">Pricing</a>
-        <a href="#">Blog</a>
-      </div>
-      <div class="col">
-        <h4>Contact Us</h4>
-        <p>123 Street, Trafford, London, UK</p>
-        <p>Email: example@mail.com</p>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- External JS and additional scripts -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <h2>Our Collection</h2>
+            <p>Explore our curated selection of outfits designed to make a statement.</p>
+            <div class="collection-grid">
+                <!-- Collection items -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 KOMADO. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
