@@ -45,7 +45,7 @@ section {
 
 #home {
     background: url('images/hero-bg.jpg') center/cover no-repeat;
-    color: white;
+    color: Green;
     height: 100vh;
     display: flex;
     flex-direction: column;
