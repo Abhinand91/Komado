@@ -1,115 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Website - Rivo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komodo - Where Culture Meets Fashion</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Rivo</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="logo">
+      <h1>Komodo</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#new-arrivals">New Arrivals</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+    <div class="tagline">
+      <p>When Culture Meets Fashion</p>
+    </div>
+  </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Discover and Find Your Own Fashion!</h2>
-                <p>Explore our curated collection of styles designed to make every moment special.</p>
-                <a href="#" class="btn">Explore Now</a>
-            </div>
-            <div class="hero-image">
-                <img src="image-placeholder.jpg" alt="Fashion Model">
-            </div>
-        </div>
+  <main>
+    <section id="home">
+      <div class="brand-diagram">
+        <img src="brand-image.jpg" alt="Brand Representation">
+      </div>
     </section>
 
-    <section class="best-selling">
-        <div class="container">
-            <h2>Best Selling</h2>
-            <p>Get to look the finest with our curated selection of best-selling styles.</p>
-            <div class="product-grid">
-                <!-- Product Cards -->
-                <div class="product-card">
-                    <img src="image-placeholder.jpg" alt="Product 1">
-                    <h3>Regular Fit Turtleneck Top</h3>
-                    <p>$29.99</p>
-                    <span>⭐⭐⭐⭐☆</span>
-                </div>
-                <div class="product-card">
-                    <img src="image-placeholder.jpg" alt="Product 2">
-                    <h3>Basic Crop Turtleneck Sweater</h3>
-                    <p>$34.99</p>
-                    <span>⭐⭐⭐⭐☆</span>
-                </div>
-                <div class="product-card">
-                    <img src="image-placeholder.jpg" alt="Product 3">
-                    <h3>Oversized Casual T-shirt</h3>
-                    <p>$19.99</p>
-                    <span>⭐⭐⭐⭐⭐</span>
-                </div>
-            </div>
-            <a href="#" class="btn">See All</a>
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="tshirt1.jpg" alt="T-shirt 1">
+          <p>Classic Green T-shirt</p>
         </div>
+        <div class="product-item">
+          <img src="tshirt2.jpg" alt="T-shirt 2">
+          <p>Elegant White Shirt</p>
+        </div>
+        <!-- Add more products here -->
+      </div>
     </section>
 
-    <section class="exclusive-offer">
-        <div class="container">
-            <div class="offer-content">
-                <h2>Exclusive Offer</h2>
-                <p>Avail the best offer of the season and make your wardrobe shine with unique styles!</p>
-                <a href="#" class="btn">Buy Now</a>
-            </div>
-            <div class="offer-image">
-                <img src="image-placeholder.jpg" alt="Exclusive Offer">
-            </div>
-        </div>
+    <section id="comments">
+      <h2>User Experiences</h2>
+      <div class="comments-display">
+        <p>"Amazing quality and fit!" - User 1</p>
+        <p>"The designs are so unique!" - User 2</p>
+      </div>
     </section>
+  </main>
 
-    <section class="feedback-corner">
-        <div class="container">
-            <h2>Feedback Corner</h2>
-            <div class="feedback-grid">
-                <div class="feedback-card">
-                    <p>"Absolutely loved the collection and the fit! Highly recommend."</p>
-                    <h3>- Cindy Williams</h3>
-                </div>
-                <div class="feedback-card">
-                    <p>"Amazing quality and a diverse collection to choose from!"</p>
-                    <h3>- Mark Thompson</h3>
-                </div>
-                <div class="feedback-card">
-                    <p>"Trendy designs and great customer service. Will shop again!"</p>
-                    <h3>- Alice Anderson</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <h3>Rivo</h3>
-                <p>Your go-to destination for fashion.</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+  <footer>
+    <div class="newsletter">
+      <h3>Subscribe to our Newsletter</h3>
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+    <div class="footer-info">
+      <p>&copy; 2025 Komodo. All rights reserved.</p>
+      <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
