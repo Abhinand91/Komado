@@ -3,74 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Komodo - Where Culture Meets Fashion</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Header Section -->
   <header>
-    <div class="logo">
-      <h1>Komodo</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#new-arrivals">New Arrivals</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about-us">About Us</a></li>
-        <li><a href="#cart">Cart</a></li>
-      </ul>
-    </nav>
-    <div class="tagline">
-      <p>When Culture Meets Fashion</p>
+    <div class="header-container">
+      <div class="logo">
+        <h1>Komodo</h1>
+        <p class="tagline">Where Culture Meets Fashion</p>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#new-arrivals">New Arrivals</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon">
+        <a href="#cart">
+          <img src="https://via.placeholder.com/30" alt="Cart">
+        </a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section id="home">
-      <div class="brand-diagram">
-        <img src="brand-image.jpg" alt="Brand Representation">
-      </div>
-    </section>
-
-    <section id="products">
-      <h2>Our Products</h2>
-      <div class="product-grid">
-        <div class="product-item">
-          <img src="tshirt1.jpg" alt="T-shirt 1">
-          <p>Classic Green T-shirt</p>
-        </div>
-        <div class="product-item">
-          <img src="tshirt2.jpg" alt="T-shirt 2">
-          <p>Elegant White Shirt</p>
-        </div>
-        <!-- Add more products here -->
-      </div>
-    </section>
-
-    <section id="comments">
-      <h2>User Experiences</h2>
-      <div class="comments-display">
-        <p>"Amazing quality and fit!" - User 1</p>
-        <p>"The designs are so unique!" - User 2</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="newsletter">
-      <h3>Subscribe to our Newsletter</h3>
-      <input type="email" placeholder="Enter your email">
-      <button>Subscribe</button>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Elegant Designs for Every Occasion</h2>
+      <p>Discover the perfect blend of tradition and trend.</p>
+      <button class="shop-now-btn">Shop Now</button>
     </div>
-    <div class="footer-info">
-      <p>&copy; 2025 Komodo. All rights reserved.</p>
-      <div class="social-media">
+    <div class="hero-image">
+      <img src="https://via.placeholder.com/500x300" alt="Hero Image">
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2 class="section-title">Our Featured Products</h2>
+    <div class="product-grid">
+      <!-- Product Item -->
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300" alt="Product 1">
+        <p>Classic Green T-Shirt</p>
+        <span class="price">$20.00</span>
+      </div>
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300" alt="Product 2">
+        <p>Elegant White Shirt</p>
+        <span class="price">$35.00</span>
+      </div>
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300" alt="Product 3">
+        <p>Modern Hoodie</p>
+        <span class="price">$50.00</span>
+      </div>
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300" alt="Product 4">
+        <p>Casual Denim Jacket</p>
+        <span class="price">$75.00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals Section -->
+  <section id="new-arrivals">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/300" alt="Arrival 1">
+        <p>Summer Collection</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/300" alt="Arrival 2">
+        <p>Spring Elegance</p>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/300" alt="Arrival 3">
+        <p>Festive Attire</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>Komodo is dedicated to blending culture with fashion. Our goal is to provide comfortable, elegant clothing tailored for the modern individual while respecting traditional roots.</p>
+  </section>
+
+  <!-- User Comments Section -->
+  <section id="comments">
+    <h2>User Experiences</h2>
+    <div class="comments-grid">
+      <blockquote>"The fit is perfect, and the quality is unmatched!" - User 1</blockquote>
+      <blockquote>"I love how comfortable and trendy their clothes are!" - User 2</blockquote>
+      <blockquote>"Fast delivery and amazing customer service!" - User 3</blockquote>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button>Subscribe</button>
+        </form>
+      </div>
+      <div class="social-links">
         <a href="#">Instagram</a>
         <a href="#">Facebook</a>
         <a href="#">Twitter</a>
       </div>
+      <p>&copy; 2025 Komodo. All Rights Reserved.</p>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
