@@ -1,21 +1,38 @@
-// Scroll animations: Add 'visible' class when elements are in view
-const fadeInElements = document.querySelectorAll('.fade-in');
+// Smooth scrolling for navigation links
+document.querySelectorAll('header nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').slice(1);
+        const targetElement = document.getElementById(targetId);
 
-const isInView = (element) => {
-    const rect = element.getBoundingClientRect();
-    return rect.top <= window.innerHeight && rect.bottom >= 0;
-};
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth',
+            });
+        }
+    });
+});
 
-const animateOnScroll = () => {
-    fadeInElements.forEach((element) => {
-        if (isInView(element)) {
-            element.classList.add('visible');
+// Animation on scroll
+const revealElements = document.querySelectorAll('.container, .product-card, .feedback-card');
+
+const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    const revealPoint = 150;
+
+    revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - revealPoint) {
+            el.classList.add('reveal');
+        } else {
+            el.classList.remove('reveal');
         }
     });
 };
 
-// Listen to the scroll event
-window.addEventListener('scroll', animateOnScroll);
+window.addEventListener('scroll', revealOnScroll);
 
-// Trigger the animation on page load
-document.addEventListener('DOMContentLoaded', animateOnScroll);
+// Trigger animation for elements already in view on page load
+document.addEventListener('DOMContentLoaded', revealOnScroll);
