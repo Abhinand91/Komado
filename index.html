@@ -1,67 +1,81 @@
-<div class="landing-section">
-  <section class="hero-banner">
-    <nav class="nav-container">
-      <div class="header-nav">
-        <h1 class="brand-logo">Rivo</h1>
-        <div class="nav-links">
-          <a href="#" class="nav-item">Home</a>
-          <a href="#" class="nav-item">Shop</a>
-          <a href="#" class="nav-item">Features</a>
-          <a href="#" class="nav-item">Contact</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website Design</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #224F34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .main-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 10px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+        .card p {
+            padding: 0 15px;
+            font-size: 1rem;
+            color: #555;
+        }
+        .card button {
+            background-color: #224F34;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .card button:hover {
+            background-color: #1a3b27;
+        }
+    </style>
+</head>
+<body>
+    <header>Fashion Website</header>
+    <div class="main-content">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Fashion Item">
+            <h3>Elegant Dress</h3>
+            <p>Discover our latest collection of elegant dresses for all occasions.</p>
+            <button>Shop Now</button>
         </div>
-        <div class="nav-auth">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ebd0d5d7c1ae363f6c7cc6ecfc05615f8296938e848dabbff709145803a0ff87?placeholderIfAbsent=true&apiKey=500e7c0f6b96453fb5eee1eef1fcedc0" class="cart-icon" alt="Shopping cart icon" />
-          <button class="login-btn">Login</button>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Fashion Item">
+            <h3>Stylish Jacket</h3>
+            <p>Stay warm and stylish with our premium quality jackets.</p>
+            <button>Shop Now</button>
         </div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-grid">
-          <div class="hero-text-col">
-            <div class="hero-text-wrapper">
-              <h2 class="hero-heading">Discover and Find Your Own Fashion!</h2>
-              <p class="hero-subtext">
-                Explore our curated collection of stylish clothing and accessories tailored to your unique taste.
-              </p>
-              <button class="cta-button">Explore Now</button>
-            </div>
-          </div>
-          <div class="hero-image-col">
-            <div class="hero-image-wrapper">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/be02f252cedcd0cb3a101eeeb3b8f1b36ddf2a20da3dfb7a0d8edd7debcace3a?placeholderIfAbsent=true&apiKey=500e7c0f6b96453fb5eee1eef1fcedc0" class="hero-image" alt="Fashion model showcasing latest collection" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/77bc484338df2e4ef89a49bfd9f759ca99f4f6e38efda8f19f357ec909e8c363?placeholderIfAbsent=true&apiKey=500e7c0f6b96453fb5eee1eef1fcedc0" class="accent-image-1" alt="Fashion accent piece" />
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/77bc484338df2e4ef89a49bfd9f759ca99f4f6e38efda8f19f357ec909e8c363?placeholderIfAbsent=true&apiKey=500e7c0f6b96453fb5eee1eef1fcedc0" class="accent-image-2" alt="Fashion accent piece" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </section>
-
-  <!-- Best Selling Section -->
-  <section class="best-selling">
-    <h2 class="section-title">Best selling</h2>
-    <p class="section-subtitle">
-      Get in on the trend with our curated selection of best-selling styles.
-    </p>
-    <!-- Continue with rest of sections following same semantic structure... -->
-  </section>
-
-  <!-- Products Grid Section -->
-  <section class="products-grid">
-    <!-- Product cards with proper semantic markup -->
-  </section>
-
-  <!-- Newsletter Section -->
-  <section class="newsletter">
-    <form class="newsletter-form">
-      <label for="email" class="visually-hidden">Enter your email</label>
-      <input type="email" id="email" class="email-input" placeholder="Enter your email" required />
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="site-footer">
-    <!-- Footer content with semantic markup -->
-  </footer>
-</div>
+    </div>
+</body>
+</html>
